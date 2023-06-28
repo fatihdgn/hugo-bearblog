@@ -1,1 +1,5 @@
+{{ if eq .Site.Language.Lang "en" }}
+{{ if ne .Site.Params.hideMadeWithLine true }}Made with <a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a>{{ end }}
+{{ else }}
 {{ if ne .Site.Params.hideMadeWithLine true }}<a href="https://github.com/janraasch/hugo-bearblog/">Hugo ʕ•ᴥ•ʔ Bear</a> ile yapıldı{{ end }}
+{{ end }}

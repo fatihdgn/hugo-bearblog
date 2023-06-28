@@ -1,7 +1,7 @@
 {{ define "main" }}
 <content>
   {{ if .Data.Singular }}
-  <h3 style="margin-bottom:0">"{{ .Title }}" aranıyor</h3>
+  <h3 style="margin-bottom:0">Searching "{{ .Title }}"</h3>
   {{ end }}
   <ul class="blog-posts">
     {{ range .Pages }}
@@ -9,7 +9,7 @@
       <span>
         <i>
           <time datetime='{{ .Date.Format "2006-01-02" }}' pubdate>
-            {{ .Date.Format "02.01.2006" }}
+            {{ .Date.Format "02 Jan 2006" }}
           </time>
         </i>
       </span>
@@ -17,7 +17,7 @@
     </li>
     {{ else }}
     <li>
-      Tüh. Bunun hakkında bir yazı ya da video yok maalesef. Ama bana yaz istersen, belki olur :)
+      Oops. Unfortunately, there is no article or video about this. But if you want, you can write to me, maybe I can help :)
     </li>
     {{ end }}
   </ul>
